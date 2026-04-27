@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>学习</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.c{background:#fff;border-radius:16px;padding:40px 30px;width:100%;max-width:380px;box-shadow:0 20px 60px rgba(0,0,0,.15)}
+.l{text-align:center;margin-bottom:30px}
+.l .i{width:64px;height:64px;background:linear-gradient(135deg,#667eea,#764ba2);border-radius:16px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:28px}
+.l h1{font-size:22px;color:#333;margin-top:12px}
+.l p{font-size:13px;color:#999;margin-top:4px}
+.g{margin-bottom:20px}
+.g label{display:block;font-size:14px;color:#555;margin-bottom:6px}
+.g input{width:100%;padding:12px 16px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:15px;outline:none;background:#fafafa}
+.g input:focus{border-color:#667eea;background:#fff}
+.b{width:100%;padding:13px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border:none;border-radius:10px;font-size:16px;cursor:pointer}
+.b:active{transform:scale(.97)}
+.f{text-align:center;margin-top:24px;font-size:12px;color:#bbb}
+.e{color:#e74c3c;font-size:13px;text-align:center;margin-top:12px;display:none}
+.s{color:#27ae60;font-size:13px;text-align:center;margin-top:12px;display:none}
+</style></head><body>
+<div class="c"><div class="l"><div class="i">&#128100;</div><h1>员工登录</h1><p>企业管理系统</p></div>
+<form id=f><div class="g"><label>账号</label><input id=u placeholder="工号/手机号"></div>
+<div class="g"><label>密码</label><input id=p type=password placeholder="密码"></div>
+<button class=b>登 录</button></form>
+<div class=e id=er></div><div class=s id=su></div>
+<div class=f>&copy; 企业管理系统</div></div>
+<script>
+document.getElementById('f').onsubmit=function(e){e.preventDefault();var u=document.getElementById('u').value.trim();var p=document.getElementById('p').value.trim();var er=document.getElementById('er');var su=document.getElementById('su');er.style.display='none';su.style.display='none';if(!u||!p){er.textContent='请输入账号和密码';er.style.display='block';return}su.textContent='登录成功';su.style.display='block'}
+</script></body></html>
